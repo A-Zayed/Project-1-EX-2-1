@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV with Form</title>
+</head>
+<body>
+    
+   <!-- HEADER -->
+   <!-- Profile pic came from https://www.freepik.com/icons/profile -->
+   <!-- future goal is to have title and summery next to profile pic and using js to animate the words coming out from the side when you load in -->
+   <header>
+    <img src="profilepic.png" alt="profile pic" width="200">
+    <h1>Amani Zayed</h1>
+    <h2>IT Support Specilist / Software Devoloper</h2>
+    <h3><a href="https://github.com/A-Zayed/portfolio-wcci">Portfolio</a> / <a href="https://github.com/A-Zayed">Github</a> / <a href="https://www.linkedin.com/in/amani-zayed-875664253/">LinkedIn</a></h3>
+    
+    <p>Graduate of WCCI with a strong foundation in software development, complemented by three years of graphic
+      design experience as well as almost two years of IT support has led to transferable skills. Looking to join a company where I can
+      utilize and further develop my skills and abilities to achieve professional growth while being resourceful and innovative.</p>
+   </header>
+
+   <!-- SECTION -->
+   <!-- This section includes education, skills and projects that i've worked on in the past -->
+   <section>
+    <h2>
+        Education
+    </h2>
+    <ul>
+        <li>Associates of Multimedia Design</li>
+        <li>Google IT support Certificate</li>
+        <li>We Can Code It Software Development Certificate</li>
+    </ul>
+
+  <!-- Preparing this part to display content side by side once CSS comes to play.  -->
+<aside>
+<div>
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ul>
+</div>
+    <div>
+    <h2>Frameworks</h2>
+    <ol>
+        <li>Spring</li>
+        <li>Node</li>
+        <li>React</li>
+        <li>Express</li>
+    </ol>
+</div>
+  </aside>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://github.com/A-Zayed/pet-API/tree/main">Virtual Pet API</a></td>
+        <td>A completed API text-based game that lets you adopt, release, feed, play, and more with virtual pets. It also includes a randomizer to mimic the passing of time and a number scale that lets you check on the needs of your pet.</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/shonjs1/AcademicMatchingProject">Academic Matching</a></td>
+        <td>A group project that I led. This app matches you for a study group based on class, subject, and grade.</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/A-Zayed/petAmok/tree/main">Pets Mess</a></td>
+        <td>A continuation of the Pets API that made the pets more rowdy with passing time.</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/A-Zayed/Springboard-CV">Springboard CV</a></td>
+        <td>Continuation of CV.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+   </section>
+
+   <!-- Extra sources for forms in HTML https://www.w3schools.com/html/html_forms.asp ,  https://www.freecodecamp.org/news/text-box-in-html-the-input-field-html-tag/ -->
+<div><br>
+   <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Email@Email.com"><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="000-000-0000"><br><br>
+
+    <label for="contact-method">Preferred Contact Method:</label><br>
+    <input type="radio" id="contact-email" name="contact-method" value="email">
+    <label for="contact-email">Email</label><br>
+    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+    <label for="contact-phone">Phone</label><br><br>
+
+    <label for="reason">Reason for Contact:</label>
+    <select id="reason" name="reason">
+        <option value="job">Job Offers</option>
+        <option value="collaboration">Collaborations</option>
+        <option value="feedback">Feedback</option>
+    </select>
+    <br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here!"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+</div>
+<footer>
+  <p>&copy; Amani Zayed CV for SpringBoard</p>
+</footer>
+</body>
+</html>
